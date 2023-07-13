@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#banner {   
+    background-color: #f25f3a; 
+    background-blend-mode: multiply;
+    height: 400px;
+    background-position: 100% 10%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    
+}
+
+
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top , 
+.hamburger-middle , 
+.hamburger-bottom {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+
+}
+
+
+.open .hamburger-middle {
+    display: none;
+}
+
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+
+}
+
+
+
+
+body {
+    background-image: url('../../public/images/landlab.png') ;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: 100% -10%;
+    /* background-color: #1D1F25; */
+    background-color: white;
+
+    /* background-image: url('../../public/images/dasa.png') ; */
+    
+}
+
+#cta ,#resume-container {
+    background-image: url('../../public/images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+
+    background-size: 2200px;
+    background-position: 0% 100%;
+}
+
+
+@media(max-width:576px) {
+    body {
+        background-position: 10px -10px;
+        background-size: 500px;
+    }
+
+    
+    #cta , #resume-container {
+        background-image: url('../../public/images/bg-simplify-section-mobile.svg');
+    }
+    
+
+    .profile-container {
+        height: 100%;
+        background-image: url('../../public/images/landlab1.png') ;
+        background-repeat: no-repeat;
+        background-size: 800px;
+        background-position: 0% 0%;
+    }
+
+    .profile-img {
+        width: 100%;
+    }
+    #about-me {
+        background-image: url('../../public/images/landlab1.png') ;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 0% 0%;
+    }
+    #other-skills {
+        background-image: url('../../public/images/landlab1.png') ;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 0% 0%;
+    }
+}
+
+@media(min-width:576px) { 
+
+    .profile-container {
+        height: auto;
+        background-image: url('../../public/images/landlab1.png') ;
+        background-repeat: no-repeat;
+        background-size: 1700px;
+        background-position: 0% 60%;
+    }
+    .profile-img {
+        height: 800px;
+    }
+
+    #about-me {
+        background-image: url('../../public/images/landlab1.png') ;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 0% 0%;
+    }
+
+    #projects {
+        background-image: url('../../public/images/landlab.png') ;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 100% 10%;
+    }
+
+    #technical-skills {
+        background-image: url('../../public/images/landlab.png') ;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 100% 10%;
+    }
+
+
+    #other-skills {
+        background-image: url('../../public/images/landlab1.png') ;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 0% 0%;
+    }
+}
+
+
+#problem-solving {
+    width: 98%;
+}
+
+
+#communication {
+    width: 85%;
+}
+
+#leadership {
+    width: 93%;
+}
+
+#oop {
+    width: 88%;
+}
+
+
+#programming {
+    width: 99%;
+}
+
+
+#creativity {
+    width: 80%;
+}
+
+#adaptability {
+    width: 87%;
+}
+
+.App {
+    
+    /* background-repeat: no-repeat; */
+    /* background-size: 1000px;
+    background-position: 100% 10%; */
+}
